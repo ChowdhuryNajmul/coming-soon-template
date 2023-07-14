@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    height: 100vh;
+    overflow: hidden;
+}
+p{
+    text-align: justify;
+}
+.icons i{
+    border: 1px solid grey;
+    border-radius: 50%;
+    padding: 5px;
+}
+.banner-image {
+    position: relative;
+}
+.banner-image img {
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-fluid{
+        height: auto !important;
+    }
+    .banner-image {
+        position: initial;
+    }
+    .banner-image img {
+        height: initial;
+    }
+  }
